@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css link here  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font-awesome CDN link here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My css link  here  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac</title>
+</head>
+<body>
+
+        <div class="container ">
+            <div class="tic-container">
+                <h1 for="">Tic Tac Toe</h1>
+                <h4 class="text-center p-2 rounded"  style="background-color: #242526;"><i class="fab fa-angellist me-2 text-warning"></i>Now <label for="" id="turn"></label> Turn</h4>
+                <hr>
+                <div class="tic-tac-container">
+                    <div id="div1" onclick="clickMe(1)" class="div first-row" ></div>
+                    <div id="div2" onclick="clickMe(2)" class="div first-row"></div>
+                    <div id="div3" onclick="clickMe(3)" class="div first-row"></div>
+                    <div id="div4" onclick="clickMe(4)" class="div second-row"></div>
+                    <div id="div5" onclick="clickMe(5)" class="div second-row"></div>
+                    <div id="div6" onclick="clickMe(6)" class="div second-row"></div>
+                    <div id="div7" onclick="clickMe(7)" class="div third-row"></div>
+                    <div id="div8" onclick="clickMe(8)" class="div third-row"></div>
+                    <div id="div9" onclick="clickMe(9)" class="div third-row"></div>
+                </div>
+                <div class="btn-container text-end ">
+                    <button id="restart-button" class="btn btn-outline-info">Restart</button>
+                </div>
+                <hr>
+                <div id="winning-message">
+                   <p class="text-center">Congratulation! You won the match <i class="fas fa-trophy" style="color: goldenrod;"></i></p>
+                </div>
+                <div id="draw-message">
+                    <p class="text-center">The match has been drawn <i class="fas fa-sad-tear" style="color: goldenrod;"></i></p>
+                 </div>
+            </div>
+           
+           
+        </div>
+
+    <!-- Bootstrap Js/Popper/jQuery Link here  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- My js link start here  -->
+    <script src="script.js"></script>
+</body>
+</html>
