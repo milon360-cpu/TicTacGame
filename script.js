@@ -11,6 +11,7 @@ function clickMe(event)
     if(getWinner()==true)
     {
         document.getElementById('winning-message').style.display = "block";
+       
     }
     else 
     {
@@ -51,7 +52,7 @@ function getWinner()
     if(checkTicCondition('div1','div2','div3') || checkTicCondition('div1','div4','div7') ||
     checkTicCondition('div1','div5','div9') || checkTicCondition('div3','div6','div9') ||
     checkTicCondition('div4','div5','div6') || checkTicCondition('div7','div8','div9') ||
-    checkTicCondition('div3','div5','div7') 
+    checkTicCondition('div3','div5','div7') || checkTicCondition('div2','div5','div8')
     )
     {
         return true;
